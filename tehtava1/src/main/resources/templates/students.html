@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Week 2, exe 1</title>
+    <title>Week 2, exe 2</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
 <h1>Opiskelijat ovat</h1>
 
+<table>
+<tr th:each="opiskelija : ${students}">
+	<td th:text="${opiskelija.firstName}">1</td>
+	<td th:text="${opiskelija.lastName}">Text ...</td>
+</tr>
+</table>
   </body>
 </html>

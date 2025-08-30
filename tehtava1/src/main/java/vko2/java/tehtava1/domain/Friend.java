@@ -1,14 +1,12 @@
 package vko2.java.tehtava1.domain;
 
+public class Friend {
+    private String firstName, lastName;
 
-
-public class Student{
-private String firstName, lastName;
-
-    public Student() {
+    public Friend() {
     }
 
-    public Student(String firstName, String lastName) {
+    public Friend(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -31,10 +29,8 @@ private String firstName, lastName;
 
     @Override
     public String toString() {
-        return "Student [firstName=" + firstName + ", lastName=" + lastName + "]";
+        return "Friend [firstName=" + firstName + ", lastName=" + lastName + "]";
     }
-
- 
     
 
 }
